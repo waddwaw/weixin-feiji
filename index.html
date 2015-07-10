@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	
+		<style type="text/css">
+			.box{
+				width: 320px;height:568px ;
+				background-image: url(img/back.png);
+				
+				/*溢出处理*/
+				overflow: hidden;
+				position: relative;
+			}
+			.startBtn{
+				width: 120px;height: 40px;
+				position: absolute;
+				left: 100px;
+				top:400px;
+				border:1px dotted #aaa;
+				cursor: pointer;
+				z-index: 1;
+					
+				
+			}
+			body
+			{
+				margin: 0;
+			}
+			
+			.scoreSpan{
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				z-index: 100;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box">
+			
+		</div>
+		<button id="startBtn" class="startBtn">开始游戏</button>
+		<span id="scoreSpan" class="scoreSpan">分数：0</span>
+		
+		<script type="text/javascript" src="js/fly.js" ></script>
+		
+	</body>
+</html>
